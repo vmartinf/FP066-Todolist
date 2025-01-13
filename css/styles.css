@@ -1,0 +1,24 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Main container */
+main {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #e9ecef;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
