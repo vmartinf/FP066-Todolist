@@ -1,0 +1,52 @@
+/* Estilos generales del proyecto */
+/* Archivo principal de estilos para la aplicación de Gestión de Proyectos */
+
+/* Estilo para el contenedor de columnas */
+.task-column {
+    min-height: 300px; /* Altura mínima para las columnas */
+    padding: 15px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde estándar */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f8f9fa; /* Fondo claro */
+    transition: background-color 0.2s; /* Transición para cambios de fondo */
+}
+
+/* Estilo visual cuando una columna acepta un elemento */
+.task-column.drag-over {
+    background-color: #e0e0e0; /* Fondo de columna al arrastrar */
+    border: 2px dashed #007bff; /* Borde azul */
+}
+
+/* Estilo general para las tarjetas */
+.task-card {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado entre tarjetas */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    cursor: grab; /* Cursor de arrastre */
+    transition: transform 0.2s ease; /* Transición para interacciones */
+}
+
+/* Estilo visual mientras una tarjeta está siendo arrastrada */
+.task-card.dragging {
+    opacity: 0.5; /* Semitransparente */
+    transform: scale(1.05); /* Ampliar ligeramente */
+}
+
+/* Estilo para los títulos de las columnas */
+.task-column h3 {
+    font-size: 1.5rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 10px; /* Separación inferior */
+    color: #333; /* Color oscuro para contraste */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Adaptaciones para pantallas pequeñas */
+@media (max-width: 768px) {
+    .task-column {
+        min-height: 200px; /* Reducir altura en pantallas pequeñas */
+    }
+}
