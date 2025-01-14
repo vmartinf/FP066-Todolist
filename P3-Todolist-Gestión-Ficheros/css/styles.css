@@ -1,0 +1,30 @@
+/* Estilos para las columnas */
+.task-column {
+    min-height: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s;
+}
+
+.task-column.drag-over {
+    background-color: #e0e0e0;
+    border: 2px dashed #007bff;
+}
+
+/* Estilos para las tarjetas */
+.task-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+}
+
+.task-card.dragging {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
